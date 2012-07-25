@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+    <layer
+        name="plone.app.aloha"
+        interface="plone.app.aloha.interfaces.IPloneAppAloha" />
+</layers>
