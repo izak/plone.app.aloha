@@ -2,4 +2,8 @@
 <object name="portal_javascripts">
     <!-- Fix bundle for jquery -->
     <javascript bundle="default" id="++resource++plone.app.jquery.js" />
+
+    <javascript cacheable="True" compression="none" cookable="True"
+        enabled="True" inline="False" expression="" insert-after="*"
+        bundle="default" id="++resource++plone.app.aloha/lib/require.js" />
 </object>
