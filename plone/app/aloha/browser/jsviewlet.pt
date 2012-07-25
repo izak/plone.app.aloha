@@ -1,19 +1,13 @@
 <tal:def define="portal_url context/@@plone_portal_state/portal_url">
-<script type="text/javascript" tal:content="string:window.alohaBase='${portal_url}/++resource++plone.app.aloha'"></script>
-<script type="text/javascript">
-(function(window, undefined) {
-
-    if (window.Aloha === undefined || window.Aloha === null) {
-        var Aloha = window.Aloha = {};
-    }
-
-    /* This is a minimal Aloha Editor configuration */
-    Aloha.settings = {
-        baseUrl: window.alohaBase
-    };
-})(window);
-</script>
-<script tal:attributes="src string:${portal_url}/++resource++plone.app.aloha/lib/aloha.js"
+<script type="text/javascript"
+        tal:attributes="src string:${portal_url}/++resource++plone.app.aloha/lib/require.js"></script>
+<script type="text/javascript"
+        tal:attributes="src string:${portal_url}/++resource++plone.app.aloha/lib/aloha.js"
         src="javascripts/aloha/aloha.js"
-        data-aloha-plugins="common/format"></script>
+        data-aloha-plugins="common/ui,common/format,common/image"></script>
+<script type="text/javascript">
+    Aloha.ready( function() {
+        Aloha.jQuery('#content-core').aloha();
+    });
+</script>
 </tal:def>
