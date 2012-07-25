@@ -1,0 +1,4 @@
+<script tal:define="portal_url context/@@plone_portal_state/portal_url"
+        tal:attributes="src string:${portal_url}/++resource++plone.app.aloha/js/aloha.js"
+        src="javascripts/aloha/aloha.js"
+        data-aloha-plugins="common/format"></script>
