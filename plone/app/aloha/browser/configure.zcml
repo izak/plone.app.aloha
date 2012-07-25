@@ -9,9 +9,11 @@
         name="plone.app.aloha"
         directory="resources" />
 
-    <browser:viewlet  
+    <!-- configured to sit in IHtmlHeadLinks so it comes after the other
+         javascript definitions. -->
+    <browser:viewlet
         name="plone.app.aloha.jsviewlet"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
         class="plone.app.aloha.browser.viewlets.AlohaJsViewlet"
         permission="zope2.View" 
         layer="plone.app.aloha.interfaces.IPloneAppAloha"
