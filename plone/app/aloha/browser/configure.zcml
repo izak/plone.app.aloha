@@ -9,4 +9,12 @@
         name="plone.app.aloha"
         directory="resources" />
 
+    <browser:viewlet  
+        name="plone.app.aloha.jsviewlet"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="plone.app.aloha.browser.viewlets.AlohaJsViewlet"
+        permission="zope2.View" 
+        layer="plone.app.aloha.interfaces.IPloneAppAloha"
+        />
+
 </configure>
