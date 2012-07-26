@@ -32,7 +32,8 @@
                             extra/flag-icons,
                             extra/linkbrowser,
                             extra/imagebrowser,
-                            extra/cite"></script>
+                            extra/cite,
+                            figure/figure"></script>
 
 <script type="text/javascript">
     Aloha.ready( function() {
