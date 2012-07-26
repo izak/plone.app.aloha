@@ -379,8 +379,8 @@ define([
 			$element = jQuery(element);
 
 			var tagName = $element[0].tagName.toLowerCase();
-			if (tagName !== 'span' && tagName !== 'div') {
-				Aloha.Log.error('block/blockmanager', 'Blocks can only be created from <div> or <span> element. You passed ' + tagName + '.');
+			if (tagName !== 'span' && tagName !== 'div' && tagName !== 'figure') {
+				Aloha.Log.error('block/blockmanager', 'Blocks can only be created from <div>, <span> or <figure> elements. You passed ' + tagName + '.');
 				return;
 			}
 

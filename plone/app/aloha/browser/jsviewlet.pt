@@ -12,7 +12,6 @@
                             common/list,
                             common/link,
                             common/undo,
-                            common/contenthandler,
                             common/paste,
                             extra/cite,
                             common/characterpicker,
@@ -33,6 +32,7 @@
                             extra/linkbrowser,
                             extra/imagebrowser,
                             extra/cite,
+                            common/dom-to-xhtml,
                             custom/figure"></script>
 
 <script type="text/javascript">

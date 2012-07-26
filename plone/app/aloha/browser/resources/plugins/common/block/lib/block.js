@@ -522,7 +522,7 @@ define([
 			if (this.isDraggable() && this.$element[0].tagName.toLowerCase() === 'span') {
 				this._setupDragDropForInlineElements();
 				this._disableUglyInternetExplorerDragHandles();
-			} else if (this.isDraggable() && this.$element[0].tagName.toLowerCase() === 'div') {
+			} else if (this.isDraggable() && this.$element[0].tagName.toLowerCase() in {div: null, figure: null}) {
 				this._setupDragDropForBlockElements();
 				this._disableUglyInternetExplorerDragHandles();
 			}
