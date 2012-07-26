@@ -33,7 +33,7 @@
                             extra/linkbrowser,
                             extra/imagebrowser,
                             extra/cite,
-                            figure/figure"></script>
+                            custom/figure"></script>
 
 <script type="text/javascript">
     Aloha.ready( function() {

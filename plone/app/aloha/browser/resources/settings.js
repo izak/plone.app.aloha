@@ -6,9 +6,6 @@
     
     Aloha.settings = {
         jQuery: window.jQuery,
-        bundles: {
-            'figure': '../figure'
-        },
         plugins: {
             format: {
                 config : ['b', 'i', 'p', 'sub', 'sup', 'del', 'title', 'h2', 'h3', 'pre', 'removeFormat']
