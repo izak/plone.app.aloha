@@ -25,9 +25,3 @@
         }
     };
 })(window);
-
-Aloha.settings.plugins = {
-  block: {
-  }
-}
-
